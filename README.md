@@ -174,5 +174,5 @@ decoded_json = json.loads(raw_response)
 if "success" not in decoded_json or not decoded_json["success"]:
     raise RuntimeError("Error!")
 
-print "My position is ", str(decoded_json["game_info"]["level_num"])
+print "I am on level ", str(decoded_json["game_info"]["level_num"])
 ```
